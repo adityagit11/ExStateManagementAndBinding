@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State var firstName = "";
+	
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+		NavigationView
+		{
+			VStack
+			{
+				TextField("User Name (email address)", text: $firstName)
+				List
+				{
+					Text("EMPTY ROW");
+				}
+			}
+		}
     }
 }
 
